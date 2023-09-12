@@ -11,6 +11,7 @@ my_fruit_list = my_fruit_list.set_index('Fruit')
 
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
 streamlit.text(fruityvice_response)
+streamlit.header("Fruityvice Fruit Advice!")
 
 streamlit.dataframe(my_fruit_list)
 
